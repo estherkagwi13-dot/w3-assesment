@@ -15,5 +15,22 @@ Use prompt() to request:
 
 let name=prompt("enter student name: ")
 let course= prompt("Enter the course:")
+let subject1=prompt("Enter marks for subject 1")
+let subject2=prompt("Enter marks for subject 2")
+let subject3=prompt("Enter marks for subject 3")
+let total= subject1+subject2+subject3
+let average= total/3
+
 console.log(name)
 console.log(course)
+console.log(average)
+console.log(total)
+let grade;
+if(grade<=49){
+    console.log("E")
+}
+else{console.log("A")}
+//validation- Should not accept empty names, marks or course
+if (subject1Input<0 || subject1Input >100){
+    console.log("error")
+}
